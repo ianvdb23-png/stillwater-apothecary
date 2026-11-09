@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stillwater Apothecary: kruidenthee voor je avondritueel</title>
+  <meta name="description" content="Kruidenthee voor wie 's avonds rustig wil worden. Cafeïnevrij, met kamille en honing. Ontvang de gratis avondgids: 7 avonden, 7 rituelen.">
+  <meta name="theme-color" content="#1A1326">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stillwater Apothecary: laat de dag bezinken">
+  <meta property="og:description" content="Kruidenthee voor je avondritueel. Ontvang de gratis avondgids: 7 avonden, 7 rituelen.">
+  <meta property="og:image" content="img/kamille-avond.webp">
+  <meta property="og:locale" content="nl_BE">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/kamille-zakje.webp">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Stillwater Apothecary",
+    "description": "Kruidenthee voor het avondritueel. Fictief merk, schoolproject.",
+    "logo": "img/logo-linnen.png",
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Chamomile & Honey", "description": "Cafeïnevrije kruidenthee met kamille en honing, 20 builtjes"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Rooibos & Forest Berries", "description": "Cafeïnevrije rooibos met bosbes, 20 builtjes"}}
+    ]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <header class="bar">
+    <a class="bar__logo" href="#top" aria-label="Stillwater Apothecary, naar boven">
+      <img src="img/logo-linnen.png" width="600" height="121" alt="Stillwater Apothecary">
+    </a>
+    <nav class="bar__nav" aria-label="Hoofdmenu">
+      <a href="#verhaal">Verhaal</a>
+      <a href="#ritueel">Ritueel</a>
+      <a href="#blends">Blends</a>
+      <a href="#vragen">Vragen</a>
+    </nav>
+    <a class="bar__join" href="#avondgids">Schrijf je in</a>
+  </header>
+
+  <main id="inhoud">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stage" data-stage>
+        <div class="hero__sky" aria-hidden="true"><div class="moon" data-moon></div></div>
+        <div class="hero__water" aria-hidden="true"></div>
+        <canvas class="hero__canvas" data-water aria-hidden="true"></canvas>
+        <img class="hero__product" data-product fetchpriority="high" src="img/kamille-zakje.webp" width="560" height="531" alt="Een kraftpapieren doosje Stillwater Apothecary Chamomile &amp; Honey met een geel band, naast een theebuiltje, aan de rand van stil water onder een violette maan">
+      </div>
+      <div class="hero__text">
+        <h1 id="hero-title" class="hero__title" aria-label="Laat de dag bezinken."><span class="line" aria-hidden="true">Laat de dag</span> <em class="line sink" aria-hidden="true">bezinken.</em></h1>
+        <p class="hero__lead">Kruidenthee voor je avondritueel, voor wie 's avonds rustig wil worden zonder meteen naar een pil te grijpen. Cafeïnevrij, met kamille en honing.</p>
+        <div class="hero__action">
+          <a class="btn" href="#avondgids">Ontvang de gratis avondgids</a>
+          <p class="hero__note" data-countdown>Je avondritueel begint om <strong data-at="-60">22:00</strong>. <a href="#ritueel">Andere bedtijd?</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPAGNEFILM -->
+    <section class="film" data-film aria-labelledby="film-title">
+      <div class="film__stage">
+        <p class="film__word film__word--l" aria-hidden="true">Eén kop,</p>
+        <p class="film__word film__word--r" aria-hidden="true">tien minuten.</p>
+        <div class="film__frame" data-film-frame>
+          <video data-video muted loop playsinline preload="metadata" poster="img/avondthee-poster.webp" aria-label="Campagnefilm: kamillebloemen dwarrelen in een glas warme thee">
+            <source src="img/avondthee.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film__scrim" aria-hidden="true"></div>
+        <div class="film__caption" data-film-caption>
+          <h2 id="film-title" class="film__title">Niets dat nog moet.</h2>
+          <div class="film__meta">
+            <button class="film__play" type="button" data-video-toggle aria-pressed="false" aria-label="Pauzeer video">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="film__ring-bg" cx="24" cy="24" r="22"/><circle class="film__ring" data-ring cx="24" cy="24" r="22"/></svg>
+              <span class="film__icon" aria-hidden="true"></span>
+            </button>
+            <p>Onze campagnefilm. Twaalf seconden, kijk ze helemaal uit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERHAAL -->
+    <section class="story" id="verhaal" data-rings data-aurora aria-labelledby="story-title">
+      <div class="story__pin">
+        <h2 id="story-title" class="story__title">Stil water.</h2>
+      </div>
+      <article class="story__item story__item--a">
+        <img src="img/kamille-avond.webp" width="1046" height="1640" loading="lazy" alt="Een doosje Chamomile &amp; Honey van Stillwater Apothecary">
+        <h3>Stillwater</h3>
+        <p>Als water stil wordt, zakt alles wat erin zweeft naar de bodem. Zo zien wij de avond: niet iets wat je moet oplossen, wel iets wat mag bezinken.</p>
+      </article>
+      <article class="story__item story__item--b">
+        <img src="img/rooibos-open.webp" width="1285" height="895" loading="lazy" alt="Een gesloten doosje Stillwater Apothecary naast een open doos Rooibos &amp; Forest Berries vol theebuiltjes">
+        <h3>Apothecary</h3>
+        <p>Vroeger haalde je een avondkruid bij de apotheker. Iemand die de planten kende en eerlijk zei wat ze wel en niet doen. Die rol nemen we graag terug op.</p>
+      </article>
+      <article class="story__item story__item--c">
+        <div class="story__care">
+          <h3>Zorg, zonder beloftes</h3>
+          <p>We beloven geen genezing. We maken een ritueel van tien minuten, met kruiden die van oudsher bij de avond horen.</p>
+          <p class="story__doctor">Neem je slaapmedicatie? Bespreek veranderingen altijd met je arts.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- RITUEEL -->
+    <section class="ritual" id="ritueel" data-aurora aria-labelledby="ritual-title">
+      <div class="ritual__intro">
+        <h2 id="ritual-title">Jouw avond in drie stappen.</h2>
+        <p>Het ritueel begint een uur voor je gaat slapen. Kies je bedtijd, dan rekenen we het voor je uit.</p>
+        <div class="bedtime" data-bedtime>
+          <label class="bedtime__label" for="bedtijd">Ik ga meestal slapen om</label>
+          <output class="bedtime__clock" for="bedtijd" data-clock>23:00</output>
+          <input class="bedtime__range" id="bedtijd" type="range" min="1260" max="1500" step="15" value="1380" aria-valuetext="23:00">
+          <div class="bedtime__scale" aria-hidden="true"><span>21:00</span><span>22:00</span><span>23:00</span><span>00:00</span><span>01:00</span></div>
+          <p class="bedtime__out" aria-live="polite">Je ritueel begint om <strong data-at="-60">22:00</strong>. <a href="#" class="bedtime__ics" data-ics download="stillwater-avondritueel.ics">Zet het in je agenda</a></p>
+        </div>
+      </div>
+
+      <ol class="ritual__steps">
+        <li class="panel panel--dim" data-dim>
+          <div class="dim__stage">
+            <div class="dim__lamp" aria-hidden="true"></div>
+            <div class="panel__verb" aria-hidden="true"><span>Dim.</span></div>
+            <button class="dim__switch" type="button" data-switch aria-pressed="false">
+              <span class="dim__toggle" aria-hidden="true"><span></span></span>
+              <span data-switch-label>Grote lampen uit</span>
+            </button>
+            <div class="panel__text">
+              <h3 class="visually-hidden">Dim het licht</h3>
+              <p><strong data-at="-60">22:00</strong> Grote lampen uit, kleine lampen aan. Je ogen merken dat de dag voorbij is.</p>
+            </div>
+          </div>
+        </li>
+        <li class="panel panel--video panel--steep" data-steep>
+          <div class="steep__stage">
+            <div class="panel__frame panel__frame--still"><span class="panel__moon" aria-hidden="true"></span><img src="img/kamille-zakje.webp" width="560" height="531" loading="lazy" alt="Doosje Chamomile &amp; Honey met theebuiltje"></div>
+            <div class="panel__verb" aria-hidden="true"><span>Giet.</span></div>
+            <div class="steep__timer" aria-hidden="true">
+              <span class="steep__cup"><span class="steep__tea" data-tea></span></span>
+              <span class="steep__time" data-steep-time>5:00</span>
+            </div>
+            <div class="panel__text">
+              <h3 class="visually-hidden">Giet je thee</h3>
+              <p><strong data-at="-45">22:15</strong> Water van 90 °C over een builtje Chamomile &amp; Honey. Laat het vijf minuten trekken. Scroll rustig mee.</p>
+            </div>
+          </div>
+        </li>
+        <li class="panel panel--moon" data-breathe>
+          <div class="sky-dots" data-stars aria-hidden="true"></div>
+          <div class="panel__verb" aria-hidden="true"><span>Wacht.</span></div>
+          <div class="breathe">
+            <button class="breathe__moon" type="button" data-breathe-btn aria-describedby="breathe-cue">
+              <span class="visually-hidden">Start één minuut ademen met de maan</span>
+              <span class="crater crater--a" aria-hidden="true"></span><span class="crater crater--b" aria-hidden="true"></span><span class="crater crater--c" aria-hidden="true"></span>
+            </button>
+            <p class="breathe__cue" id="breathe-cue" aria-live="polite" data-cue>Tik op de maan en adem één minuut mee.</p>
+          </div>
+          <div class="panel__text">
+            <h3 class="visually-hidden">Wacht tien minuten</h3>
+            <p><strong data-at="-35">22:25</strong> Tien minuten niets. Geen scherm, geen to-do. Alleen de warmte van de kop in je handen.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- BLENDS -->
+    <section class="blends" id="blends" data-rings aria-labelledby="blends-title">
+      <div class="blends__list">
+        <h2 id="blends-title">Twee blends voor de avond.</h2>
+        <p class="blends__lead">En twee die we je 's avonds eerlijk afraden. Elk doosje telt 20 builtjes.</p>
+        <ul class="index" data-index>
+          <li>
+            <button type="button" class="index__row" aria-pressed="true" data-tint="#E7C56A" data-img="img/kamille-zakje.webp" data-w="560" data-h="531" data-alt="Doosje Chamomile &amp; Honey met theebuiltje">
+              <span class="index__name" translate="no">Chamomile &amp; Honey</span>
+              <span class="index__when">Avondthee</span>
+              <span class="index__desc">Zacht en licht zoet, zonder cafeïne. Onze eerste avondblend.</span>
+            </button>
+            <img class="index__thumb" src="img/kamille-zakje.webp" width="560" height="531" loading="lazy" alt="">
+          </li>
+          <li>
+            <button type="button" class="index__row" aria-pressed="false" data-tint="#9C4257" data-img="img/rooibos-zakje.webp" data-w="559" data-h="496" data-alt="Doosje Rooibos &amp; Forest Berries met theebuiltje">
+              <span class="index__name" translate="no">Rooibos &amp; Forest Berries</span>
+              <span class="index__when">Avondthee</span>
+              <span class="index__desc">Voller en rond, zonder cafeïne. Voor wie 's avonds iets meer smaak wil.</span>
+            </button>
+            <img class="index__thumb" src="img/rooibos-zakje.webp" width="559" height="496" loading="lazy" alt="">
+          </li>
+          <li>
+            <button type="button" class="index__row" aria-pressed="false" data-tint="#D08A3C" data-img="img/gember-doos.webp" data-w="373" data-h="619" data-alt="Doosje Ginger &amp; Turmeric">
+              <span class="index__name" translate="no">Ginger &amp; Turmeric</span>
+              <span class="index__when">Overdag</span>
+              <span class="index__desc">Warm en pittig. Lekker na de lunch, minder vlak voor het slapengaan.</span>
+            </button>
+            <img class="index__thumb" src="img/gember-doos.webp" width="373" height="619" loading="lazy" alt="">
+          </li>
+          <li>
+            <button type="button" class="index__row" aria-pressed="false" data-tint="#4A4458" data-img="img/groen-doos.webp" data-w="333" data-h="620" data-alt="Doosje Green Tea &amp; Lemongrass">
+              <span class="index__name" translate="no">Green Tea &amp; Lemongrass</span>
+              <span class="index__when">Niet 's avonds</span>
+              <span class="index__desc">Groene thee bevat cafeïne. Daarom houden we hem uit je avondkop.</span>
+            </button>
+            <img class="index__thumb" src="img/groen-doos.webp" width="333" height="620" loading="lazy" alt="">
+          </li>
+        </ul>
+      </div>
+      <figure class="blends__frame" aria-live="polite" data-frame>
+        <span class="blends__moon" data-tint-moon aria-hidden="true"></span>
+        <img data-preview src="img/kamille-zakje.webp" width="560" height="531" loading="lazy" alt="Doosje Chamomile &amp; Honey met theebuiltje">
+      </figure>
+    </section>
+
+    <!-- AANMELDEN -->
+    <section class="signup" id="avondgids" data-rings aria-labelledby="signup-title">
+      <div class="signup__offer">
+        <h2 id="signup-title">Zeven avonden, zeven rituelen.</h2>
+        <p>Onze gratis avondgids: elke avond één kleine gewoonte voor een rustiger hoofd. Je krijgt hem meteen na je inschrijving in je inbox.</p>
+        <div class="book" aria-label="Voorbeeld van de avondgids">
+          <div class="book__cover" aria-hidden="true">
+            <span class="book__moon"></span>
+            <span class="book__title">7 avonden,<br>7 rituelen</span>
+            <span class="book__by">Een avondgids van Stillwater Apothecary</span>
+          </div>
+          <div class="book__page">
+            <p class="book__head">Wat erin staat</p>
+            <ol class="nights">
+              <li>Je scherm een uur eerder weg</li>
+              <li>Het licht dimmen</li>
+              <li>Een kop thee zonder haast</li>
+              <li>Drie minuten trager ademen</li>
+              <li>Je hoofd leegschrijven op papier</li>
+              <li>Een vaste bedtijd kiezen</li>
+              <li>Terugkijken op je week</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" data-form action="https://assets.mailerlite.com/jsonp/2733660/forms/203480740109747708/subscribe" method="post" novalidate>
+        <div class="form__body" data-form-body>
+          <div class="field">
+            <label for="f-name">Voornaam</label>
+            <input id="f-name" name="fields[name]" type="text" autocomplete="given-name" required aria-describedby="f-name-err">
+            <p class="field__err" id="f-name-err" hidden>Vul je voornaam in, dan weten we hoe we je mogen aanspreken.</p>
+          </div>
+          <div class="field">
+            <label for="f-email">E-mailadres</label>
+            <input id="f-email" name="fields[email]" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="f-email-err">
+            <p class="field__err" id="f-email-err" hidden>Dit e-mailadres klopt nog niet. Controleer of er een @ en een punt in staan, bv. naam@voorbeeld.be.</p>
+          </div>
+          <div class="check">
+            <input id="f-optin" type="checkbox" required aria-describedby="f-optin-err">
+            <label for="f-optin">Ja, stuur me de avondgids en hoogstens één mail per week. Uitschrijven kan altijd, onderaan elke mail.</label>
+            <p class="field__err" id="f-optin-err" hidden>Vink dit aan, dan mogen we je de avondgids mailen.</p>
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <button class="btn btn--full" type="submit" data-submit>Stuur me de avondgids</button>
+          <p class="form__privacy">We gebruiken je voornaam en e-mailadres alleen voor deze mails. Ze worden verwerkt door MailerLite en nooit verkocht of gedeeld.</p>
+          <p class="form__status" data-status role="status" aria-live="polite"></p>
+        </div>
+        <div class="form__done" data-form-done hidden tabindex="-1">
+          <h3>De avondgids is onderweg.</h3>
+          <p>Kijk zo meteen in je inbox, en anders even bij je spam. Tot vanavond, <span data-name>je</span>.</p>
+        </div>
+      </form>
+
+      <div class="after">
+        <h3>Na je inschrijving</h3>
+        <ol class="after__list">
+          <li><strong>Vandaag</strong> Een welkomstmail met de avondgids als download.</li>
+          <li><strong>Morgen</strong> Je avondritueel in drie rustige stappen.</li>
+          <li><strong>Daarna</strong> Hoogstens één mail per week. Uitschrijven met één klik.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VRAGEN -->
+    <section class="faq" id="vragen" aria-labelledby="faq-title">
+      <div class="faq__text">
+        <h2 id="faq-title">De bijsluiter.</h2>
+        <p class="faq__sub">Eerlijke antwoorden, lees ze voor je begint.</p>
+        <ul class="faq__facts">
+          <li>Chamomile &amp; Honey en Rooibos zijn cafeïnevrij</li>
+          <li>20 builtjes per doosje</li>
+          <li>Vijf minuten trekken bij 90 °C</li>
+        </ul>
+        <div class="faq__list leaflet">
+          <details>
+            <summary>Kan thee mijn slaapmedicatie vervangen?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Nee, en dat beloven we ook niet. Thee is geen geneesmiddel. Neem je slaapmedicatie? Bespreek veranderingen altijd met je arts. Wat een kop thee wel kan: je elke avond een vast, rustig moment geven.</p></div>
+          </details>
+          <details>
+            <summary>Zit er cafeïne in?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Chamomile &amp; Honey en Rooibos &amp; Forest Berries zijn cafeïnevrij. Green Tea &amp; Lemongrass bevat wel cafeïne. Daarom raden we die 's avonds af.</p></div>
+          </details>
+          <details>
+            <summary>Waarom kamille?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Kamille wordt al eeuwenlang 's avonds gedronken. Het is mild, zacht van smaak en bevat geen cafeïne. Met een beetje honing wordt het een kop die aanvoelt als thuiskomen.</p></div>
+          </details>
+          <details>
+            <summary>Hoeveel mails krijg ik?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Je krijgt meteen een welkomstmail met de avondgids. Daarna hoogstens één mail per week. Uitschrijven doe je met één klik, onderaan elke mail.</p></div>
+          </details>
+          <details>
+            <summary>Wat gebeurt er met mijn gegevens?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>We bewaren alleen je voornaam en e-mailadres, om je de mails te sturen waarvoor je je inschreef. MailerLite verwerkt ze voor ons. We verkopen of delen ze nooit. Schrijf je je uit, dan stoppen de mails meteen.</p></div>
+          </details>
+          <details>
+            <summary>Wanneer kan ik de thee kopen?<span class="faq__plus" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Stillwater Apothecary is nieuw. Wie zich inschrijft, hoort als eerste wanneer de blends te koop zijn.</p></div>
+          </details>
+        </div>
+        <a class="btn" href="#avondgids">Ontvang de gratis avondgids</a>
+      </div>
+      <div class="faq__media">
+        <img class="faq__tall" src="img/gember-avond.webp" width="951" height="1581" loading="lazy" alt="Een doosje Ginger &amp; Turmeric van Stillwater Apothecary">
+        <img class="faq__square" src="img/rooibos-zakje.webp" width="559" height="496" loading="lazy" alt="Doosje Rooibos &amp; Forest Berries met theebuiltje">
+      </div>
+    </section>
+
+    <!-- SLOT -->
+    <section class="close" data-rings data-aurora aria-label="Inschrijven">
+      <p>Vanavond al beginnen? Dim om tien uur het licht. De rest van het ritueel sturen we je per mail.</p>
+      <a class="btn" href="#avondgids">Ontvang de gratis avondgids</a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__top">
+      <nav aria-label="Footer">
+        <a href="#verhaal">Verhaal</a>
+        <a href="#ritueel">Ritueel</a>
+        <a href="#blends">Blends</a>
+        <a href="#vragen">Vragen</a>
+      </nav>
+      <p>Kruidenthee is geen geneesmiddel. Neem je slaapmedicatie? Bespreek veranderingen altijd met je arts.</p>
+    </div>
+    <p class="foot__mark" aria-hidden="true" translate="no">Stillwater</p>
+    <p class="foot__legal">Stillwater Apothecary is een fictief merk, gemaakt voor de eindopdracht Creative Automations (Arteveldehogeschool, GRADVG-B, Ian Van den Broecke). Productfoto's uit het aangeleverde fotopakket, label automatisch vervangen. Video gegenereerd met AI. Teksten geschreven met Claude.</p>
+  </footer>
+
+  <a class="dock" href="#avondgids" data-dock>Ontvang de gratis avondgids</a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

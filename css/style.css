@@ -774,3 +774,12 @@ body::after {
 .film__caption { inset: clamp(5rem, 12svh, 8rem) auto auto var(--margin); }
 @media (max-width: 640px) { .film__caption { inset: 6svh var(--margin) auto var(--margin); } }
 .story__item, .faq__media, .blends__frame { min-width: 0; }
+
+/* vaste navigatie: transparant op de hero, daarna een effen balk */
+html { scroll-behavior: auto; }
+.bar {
+  position: fixed; z-index: 40; padding-block: 1.5rem;
+  transition: background-color 300ms var(--ease-out), padding 300ms var(--ease-out);
+}
+.bar.is-stuck { background: var(--night); padding-block: 0.8rem; }
+@media (max-width: 640px) { .bar { padding-block: 1rem; } .bar.is-stuck { padding-block: 0.65rem; } }

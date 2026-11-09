@@ -270,6 +270,7 @@
     moon.style.translate = `calc(-50% + ${depth.x * -0.5}px) calc(-50% + ${off + depth.y * -0.5}px)`;
   };
   let ticking = false;
+  const bar = $('.bar');
   const dim = $('[data-dim]');
   const dimStage = dim && $('.dim__stage', dim);
   const switchBtn = $('[data-switch]');
@@ -339,6 +340,7 @@
   }
   const onScroll = () => {
     ticking = false;
+    bar.classList.toggle('is-stuck', scrollY > 24);
     if (film) target.film = progress(film);
     if (steep) target.steep = progress(steep);
     if (dim) target.dim = progress(dim);
@@ -574,6 +576,36 @@
         body.animate([{ height: '0px', opacity: 0 }, { height: h + 'px', opacity: 1 }], { duration: 480, easing: 'cubic-bezier(0.22,1,0.36,1)' });
       }
     });
+  });
+
+  /* ---------- menu: rustig naar de sectie glijden ---------- */
+  let glide = 0;
+  const stopGlide = () => cancelAnimationFrame(glide);
+  ['wheel', 'touchstart', 'keydown'].forEach((t) => addEventListener(t, stopGlide, { passive: true }));
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    const id = link && link.getAttribute('href').slice(1);
+    const target = id && document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    stopGlide();
+    const from = scrollY;
+    // elke frame opnieuw meten: beelden die onderweg laden verschuiven de pagina
+    const dest = () => (id === 'top' ? 0 : Math.max(0, target.getBoundingClientRect().top + scrollY - bar.offsetHeight + 1));
+    const finish = () => {
+      history.pushState(null, '', '#' + id);
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    };
+    if (reduce.matches) { scrollTo(0, dest()); finish(); return; }
+    const duration = Math.min(1700, Math.max(800, Math.abs(dest() - from) * 0.22));
+    const start = performance.now();
+    const step = (now) => {
+      const k = Math.min(1, (now - start) / duration);
+      scrollTo(0, from + (dest() - from) * ease(k));
+      if (k < 1) glide = requestAnimationFrame(step); else finish();
+    };
+    glide = requestAnimationFrame(step);
   });
 
   /* ---------- waar je klikt, rimpelt het water ---------- */
